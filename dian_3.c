@@ -1,4 +1,39 @@
-
+#include <stdio.h>
+int LanBan();
+int GuKe();
+int HuoWuXianShi();
+int begin();
+ 
+const  int HuoJia [4] [5] =     		//售货机本机 
+{
+	{0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0}
+};
+int Using_HuoJia [4] [5] =    
+{
+	{0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0}
+};
+int main()//开始
+{
+    begin();
+    return 0;
+}
+int LanBan()//老板模式
+{
+    printf("已进入老板模式\n");
+    HuoWuXianShi();
+    int B_ShuRu;
+    printf ("输入密码（初始123456）设置货物，输入其他回到开始"); printf("\n");
+    int B_MiMa = 123456;
+    scanf ("%d",B_ShuRu);
+    if (B_ShuRu == B_MiMa)
+    {
+    	
     	
 	}
 	else begin(); 
